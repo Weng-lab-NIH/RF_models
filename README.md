@@ -1,5 +1,4 @@
-# RF_models
-Random Forest based classification of epitope specific TCRs
+# TCRs RF models pipelime
 README for RF models pipeline for classifying epitope specific TCR. 
 
 
