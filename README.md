@@ -7,15 +7,24 @@ Steps: Overall the pipeline consists of four steps. Step 1 involves creation of 
 
 #######################
 Usage: RF_models.sh [-h]
+
 RF_models.sh takes five arguments
+
 See example script below:
+
 ./RF_models.sh train_posset.csv train_negset.csv testset.csv RF_models_workingdir_name cdr3only[true/fasle]
+
 	train_posset.csv ==> file name of postive training set
+	
 	train_negset.csv ==> file name of negative training set
+	
 	RF_models_workingdir_name ==> working directory where intermediary and results file will be stored. 
+	
 	cdr3only[true/fasle] ==> if true then pipeline will be run for cdr3 region only, if false then pipeline will be run for all cdr (1,2,3) regions
 	RF predictions will be stored in RF_models_workingdir_name/RFtestingset_scores.txt
+	
 #######################
+
 Step1: Kmer
 Inputs: 
 Data: The associated data sets used to generate the initial dictionary to train the RF models. inputs should be comma separated arrays with columns: V-Gene Alpha, CDR3 Alpha, J-Gene Alpha, V-Gene Beta, CDR3 Beta, J-Gene Beta. V-Gene Alpha, J-Gene Alpha, V-Gene Beta and J-Gene Beta should contain the associated gene in all capitals, e.g. TRAV1 while CDR3 Alpha and CDR3 Beta should contain the associated amino acid sequence.
