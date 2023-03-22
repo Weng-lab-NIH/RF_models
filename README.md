@@ -1,4 +1,4 @@
-# TCRs RF models pipelime
+# Epitope specific TCRs prediction using random forests pipeline.
 README for RF models pipeline for classifying epitope specific TCR. 
 
 
